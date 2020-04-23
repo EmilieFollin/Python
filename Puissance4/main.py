@@ -44,8 +44,9 @@ grille = [
 # Difficile d'y intégrer une couleur de joueurs
 # On se baserait sur des X et des O pour différencier les joueurs
 # Comme au morpion
-print('\n'.join([''.join(['{:2}'.format(item) for item in row]) 
-      for row in grille]))
+
+# print('\n'.join([''.join(['{:2}'.format(item) for item in row]) 
+#      for row in grille]))
 
  
 
@@ -57,3 +58,6 @@ for row in grille:
     for value in row:
         print '{:4}'.format("\033[1;33;40m"+value),
     print
+
+
+
